@@ -1,26 +1,90 @@
-# Desenvolvimento de Software I
-Aulas de Desenvolvimento de Software com o professor João Siles utilizando o Java.
+# 📘 Desenvolvimento de Software I
 
-## Baixando e configurando o Java no computador:
+Aulas de Desenvolvimento de Software com o professor **João Siles**, utilizando a linguagem **Java**.
 
-- Para usar o Java no computador primeiro é necessário instalar um JDK (Java Development Kit), que é um conjunto de ferramentas usadas para criar e executar um programa em Java.
-- Após baixar um JDK compatível com seu sistema, é necessário seguir os passos da instalação.
-- Durante a instalação precisamos habilitar as configurações automáticas do **Path** e a variável **Java_Home**, pois isso permite que o sistema reconheça os comandos do Java no terminal.
+---
 
-## Configurações básicas do Java:
+## ☕ Configuração do Java
 
-- Todo programa criado no Java deve estar dentro de uma ``Class``, que é uma classe.
-- O nome da classe principal deve sempre estar igual ao nome do arquivo, por exemplo, se o nome do arquivo é ``Main.java``, o nome da classe principal deve ser ``Main``.
-- Toda instrução dada ao java deve terminar com ``;``.
-- Exemplo de código escrito em Java criado em aula:
-```
-package  aula01;
+Para desenvolver em Java, é necessário instalar o **JDK (Java Development Kit)**, que contém as ferramentas para criar e executar programas.
 
-public  class  Main {
-	public  Main() {
-	}
-	public  static  void  main(String[] var0) {
-		System.out.println("Hello World");
-	}
+### 🔽 Passos:
+
+1. Baixar um JDK compatível com seu sistema operacional  
+2. Executar a instalação normalmente  
+3. Durante a instalação, habilitar:
+   - `Path`
+   - `JAVA_HOME`  
+
+Essas configurações permitem executar comandos Java diretamente no terminal.
+
+---
+
+## 🧱 Estrutura básica de um programa Java
+
+- Todo programa deve estar dentro de uma **classe (`class`)**
+- O nome da classe principal deve ser igual ao nome do arquivo  
+  - Exemplo: `Main.java` → `class Main`
+- Toda instrução termina com `;`
+
+### 💻 Exemplo:
+
+```java
+package aula01;
+
+public class Main {
+
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
 }
 ```
+
+---
+
+## 🔧 Operadores de Atribuição
+
+Os operadores de atribuição permitem modificar o valor de uma variável utilizando o valor atual dela.
+
+### 🧠 Exemplos:
+
+```java
+public class OperadoresAtribuicao {
+    public static void main(String[] args) {
+
+        int x = 5; // Atribui 5 à variável
+
+        x += 3; // x = x + 3 (soma)
+        x -= 3; // x = x - 3 (subtração)
+        x *= 3; // x = x * 3 (multiplicação)
+        x /= 3; // x = x / 3 (divisão)
+        x %= 3; // x = x % 3 (resto da divisão)
+
+        x &= 3; // AND bit a bit
+        x |= 3; // OR bit a bit
+        x ^= 3; // XOR bit a bit
+
+        x >>= 3; // desloca bits para direita
+        x <<= 3; // desloca bits para esquerda
+    }
+}
+```
+
+---
+
+## 📌 Observação
+
+Todos esses operadores seguem a mesma lógica:
+
+> Pegam o valor atual da variável, aplicam uma operação e salvam o resultado nela mesma.
+
+Exemplo:
+
+```java
+x += 3; // equivalente a x = x + 3
+```
+
+---
